@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Екскурсійне бюро Чернівців</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700&family=Volkhov:wght@700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body id="top">
+
+    <header>
+        <p class="logo"><strong>Чернівці-Тур</strong></p>
+
+        <nav aria-label="Головна навігація">
+            <div class="dropdown">
+                <a href="#tur" class="dropdown-toggle" aria-haspopup="true">Екскурсії <span class="arrow">&#9662;</span></a>
+                <ul class="submenu">
+                    <li><a href="#tur">Резиденція митрополитів</a></li>
+                    <li><a href="#tur">Вулиця Ольги Кобилянської</a></li>
+                    <li><a href="#tur">Театральна площа</a></li>
+                    <li><a href="#tur">Турецька криниця</a></li>
+                </ul>
+            </div>
+            <a href="#hero">Головна </a>
+            <a href="#news">Новини</a>
+            <a href="#oput">Опитування</a>
+            <a href="#widp">Контакти</a>
+            <a href="#whid" class="nav-signup">Вхід/Реєстрація</a>
+        </nav>
+
+        <form action="/search" method="get" class="search-form">
+            <input type="search" name="p" placeholder="Пошук екскурсії..." aria-label="Пошук екскурсії">
+            <button type="submit" aria-label="Шукати"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </form>
+    </header>
+
+    <main>
+        <section id="hero">
+            <div class="hero-text">
+                <p class="hero-sub">Найкращі маршрути Чернівцями</p>
+                <h1>Подорожуйте, <span class="hl">відкривайте</span> та закохуйтесь у місто</h1>
+                <p class="hero-desc">Пішохідні й автобусні екскурсії старовинними вулицями, резиденцією митрополитів та легендами Буковини. Оберіть маршрут і приєднуйтесь до групи вже сьогодні.</p>
+            </div>
+            <div class="hero-img">
+                <img src="img/vy.jpg" alt="Чернівецький університет">
+            </div>
+        </section>
+
+        <section id="tur" class="section-alt">
+            <p class="section-sub">Популярне</p>
+            <h2>Наші екскурсії</h2>
+            <div class="cards-grid">
+                <article class="tour-card">
+                    <div class="card-img">
+                        <img src="img/universitet.jpg" alt="Чернівецький університет">
+                        <span class="card-overlay">Резиденція митрополитів</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-main-info">
+                            <h3>Резиденція митрополитів</h3>
+                            <span class="card-price">200 грн</span>
+                        </div>
+                        <div class="card-trip-info">
+                            <i class="fa-solid fa-location-arrow"></i>
+                            <span>2.5 години</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="tour-card">
+                    <div class="card-img">
+                        <img src="img/vylica.jpg" alt="Вулиця Ольги Кобилянської">
+                        <span class="card-overlay">Вулиця Ольги Кобилянської</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-main-info">
+                            <h3>Вулиця Ольги Кобилянської</h3>
+                            <span class="card-price">150 грн</span>
+                        </div>
+                        <div class="card-trip-info">
+                            <i class="fa-solid fa-location-arrow"></i>
+                            <span>1.5 години</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="tour-card">
+                    <div class="card-img">
+                        <img src="img/teatr.jpg" alt="Театральна площа">
+                        <span class="card-overlay">Театральна площа</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-main-info">
+                            <h3>Театральна площа</h3>
+                            <span class="card-price">150 грн</span>
+                        </div>
+                        <div class="card-trip-info">
+                            <i class="fa-solid fa-location-arrow"></i>
+                            <span>2 години</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="tour-card">
+                    <div class="card-img">
+                        <img src="img/krinica.jpg" alt="Турецька криниця">
+                        <span class="card-overlay">Турецька криниця</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-main-info">
+                            <h3>Турецька криниця</h3>
+                            <span class="card-price">250 грн</span>
+                        </div>
+                        <div class="card-trip-info">
+                            <i class="fa-solid fa-location-arrow"></i>
+                            <span>1.5 години</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="news">
+            <div class="news-layout">
+                <div class="news-list">
+                    <p class="section-sub">Актуальне</p>
+                    <h2>Новини бюро</h2>
+
+                    <article class="news-item">
+                        <span class="news-icon icon-yellow"><i class="fa-solid fa-graduation-cap"></i></span>
+                        <div>
+                            <h3>Знижки 20% для студентів</h3>
+                            <p>Покажіть студентський квиток та отримайте знижку на будь-який маршрут.</p>
+                            <time datetime="2026-10-01">01 Жовтня 2026</time>
+                        </div>
+                    </article>
+
+                    <article class="news-item">
+                        <span class="news-icon icon-orange"><i class="fa-solid fa-map"></i></span>
+                        <div>
+                            <h3>Новий маршрут "Підземелля міста"</h3>
+                            <p>Відкрито попередній запис на нову екскурсію таємничими локаціями Чернівців.</p>
+                            <time datetime="2026-11-28">28 Листопада 2026</time>
+                        </div>
+                    </article>
+
+                    <article class="news-item">
+                        <span class="news-icon icon-teal"><i class="fa-solid fa-masks-theater"></i></span>
+                        <div>
+                            <h3>Театралізована екскурсія з ліхтарником</h3>
+                            <p>Атмосферна вечірня прогулянка старовинними вуличками міста у супроводі колоритного ліхтарника та живих міських легенд.</p>
+                            <time datetime="2026-12-05">05 Грудня 2026</time>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="news-visual">
+                    <article class="news-card">
+                        <img src="img/lihtari.jpg" alt="Театральна площа">
+                        <h3>Екскурсія з ліхтарником</h3>
+                        <p class="news-meta">05 Грудня <span>|</span> від Чернівці-Тур</p>
+                        <div class="news-chips">
+                            <span><i class="fa-solid fa-leaf"></i></span>
+                            <span><i class="fa-regular fa-map"></i></span>
+                            <span><i class="fa-solid fa-location-arrow"></i></span>
+                        </div>
+                        <div class="news-foot">
+                            <span><i class="fa-solid fa-users"></i> 24 людини йдуть</span>
+                            <i class="fa-regular fa-heart news-heart"></i>
+                        </div>
+                    </article>
+
+                    <aside class="news-float">
+                        <img src="img/pidzem.jpg" alt="">
+                        <div>
+                            <p class="float-label">Запис відкрито</p>
+                            <h3>Підземелля міста</h3>
+                            <p class="float-progress"><span>40%</span> місць заброньовано</p>
+                            <div class="progress" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"><div></div></div>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </section>
+
+        <hr>
+
+        <section id="oput" class="section-alt">
+            <p class="section-sub">Ваша думка</p>
+            <h2>Анкета туриста</h2>
+            <form action="/survey" method="post">
+                <p>
+                    <label for="s-login">Логін:</label><br>
+                    <input type="text" id="s-login" name="login" placeholder="Ваш логін" required>
+                </p>
+
+                <p>
+                    <label for="s-email">Email:</label><br>
+                    <input type="email" id="s-email" name="email" placeholder="mail@example.com" required>
+                </p>
+
+                <p>
+                    <label for="s-tour">Оберіть тур:</label><br>
+                    <select id="s-tour" name="tour">
+                        <option value="walk" selected>Пішохідний (за замовчуванням)</option>
+                        <option value="bus">Автобусний</option>
+                        <option value="vip">Індивідуальний</option>
+                    </select>
+                </p>
+
+                <fieldset>
+                    <legend>Оцініть екскурсію:</legend>
+                    <label><input type="radio" name="rate" value="5"> Відмінно</label>
+                    <label><input type="radio" name="rate" value="4"> Добре</label>
+                    <label><input type="radio" name="rate" value="3"> Задовільно</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Чи плануєте повернутися до Чернівців?</legend>
+                    <label><input type="radio" name="again" value="yes"> Так</label>
+                    <label><input type="radio" name="again" value="no"> Ні</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Додаткові послуги:</legend>
+                    <label><input type="checkbox" name="extra" value="photo"> Фотограф</label>
+                    <label><input type="checkbox" name="extra" value="audio"> Аудіогід</label>
+                    <label><input type="checkbox" name="extra" value="coffee"> Дегустація кави</label>
+                </fieldset>
+
+                <p>
+                    <label for="s-text">Ваш відгук або побажання:</label><br>
+                    <textarea id="s-text" name="message" rows="4" cols="40" placeholder="Напишіть тут..."></textarea>
+                </p>
+
+                <p>
+                    <button type="submit">Відправити анкету</button>
+                    <button type="reset">Очистити</button>
+                </p>
+            </form>
+        </section>
+
+        <hr>
+
+        <section id="whid">
+            <p class="section-sub">Особистий кабінет</p>
+            <h2>Вхід до кабінету</h2>
+            <form action="/login" method="post">
+                <p>
+                    <label for="login-email">Email:</label><br>
+                    <input type="email" id="login-email" name="email" placeholder="mail@example.com" required>
+                </p>
+                <p>
+                    <label for="login-pass">Пароль (від 8 символів):</label><br>
+                    <input type="password" id="login-pass" name="password" minlength="8" placeholder="Введіть пароль" required>
+                </p>
+                <p>
+                    <button type="submit">Увійти</button>
+                    <button type="reset">Очистити</button>
+                </p>
+            </form>
+
+            <h3 class="form-title">Створити новий акаунт</h3>
+            <form action="/register" method="post">
+                <p>
+                    <label for="reg-email">Email:</label><br>
+                    <input type="email" id="reg-email" name="email" placeholder="mail@example.com" required>
+                </p>
+                <p>
+                    <label for="reg-pass">Пароль (від 8 символів):</label><br>
+                    <input type="password" id="reg-pass" name="password" minlength="8" placeholder="Створіть пароль" required>
+                </p>
+                <p>
+                    <label for="reg-repeat">Повторіть пароль:</label><br>
+                    <input type="password" id="reg-repeat" name="password_repeat" minlength="8" placeholder="Повторіть пароль" required>
+                </p>
+                <p>
+                    <button type="submit">Зареєструватися</button>
+                    <button type="reset">Очистити</button>
+                </p>
+            </form>
+        </section>
+    </main>
+
+    <section id="widp" class="section-alt">
+        <p class="section-sub">Зв'яжіться з нами</p>
+        <h2>Контакти</h2>
+        <address>
+            <p><i class="fa-solid fa-phone"></i><br>+38 (050) 123-45-67</p>
+            <p><i class="fa-solid fa-envelope"></i><br>info@chernivtsi-tour.ua</p>
+            <p><i class="fa-solid fa-location-dot"></i><br>м. Чернівці, ФМІ, 67</p>
+        </address>
+    </section>
+
+    <footer>
+        <p class="logo"><strong>Чернівці-Тур</strong></p>
+        <p>&copy; 2026 Чернівці-Тур. Всі права захищено. За підтримки румунської мафії.</p>
+    </footer>
+
+    <a href="#top" class="to-top" aria-label="Повернутися нагору"></a>
+
+</body>
+</html>
